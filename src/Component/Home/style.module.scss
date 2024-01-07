@@ -1,0 +1,51 @@
+.notification {
+  ul {
+    list-style-type: none;
+    padding-left: 40px;
+  }
+
+  li {
+    font-size: 30px;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      background-color: white;
+      border-radius: 50%;
+    }
+  }
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;  
+
+  .sliderContainer {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  .slide {
+    display: flex;
+    margin-right: 40px;
+
+    img {
+      width: 200px;
+      
+    }
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}
