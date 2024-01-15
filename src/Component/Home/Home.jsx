@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from './style.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBullhorn } from '@fortawesome/free-solid-svg-icons';
+import Footer from "../Header&Footer/Footer";
 
 const Home = () => {
   const [startIndex, setStartIndex] = useState(0);
@@ -54,6 +55,7 @@ const Home = () => {
   const visibleImages = images.slice(startIndex, startIndex + 8);
 
   return (
+    <>
     <div className="bg-[#253238] flex h-screen justify-center">
       <div className="w-[1920px] justify-center flex-col bg-[#141414] p-[20px] mt-[20px]">
       <div className="bg-[#2D2D2D] w-full p-[10px]">
@@ -109,6 +111,8 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 
